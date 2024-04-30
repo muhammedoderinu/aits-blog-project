@@ -1,0 +1,89 @@
+.imangi img {
+  height: 300px; 
+  max-width: 100%; 
+  display: flex;
+  margin-top: 100px;
+  /* margin: 0 auto;  */
+  padding: 0px auto;
+}
+.oho{
+/* margin: 1000px; */
+margin-bottom:200px ;
+}
+
+.image{
+  width: 1350px;
+  height: 350px;
+ 
+}
+
+.App{
+  text-align: center;
+ 
+}
+.navbar {
+  position: fixed;
+  top: 55px;
+  width: 500px;
+  max-width: 100%; 
+  padding: 10px;
+  margin-left: 400px; 
+  margin-right: auto; 
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  background-color: rgb(225, 222, 222);
+  border-bottom: 2px solid #535050;
+  border-radius: 10px;
+  z-index: 1000; 
+}
+
+.navbar.links {
+  margin-left: auto;
+  font-size: 23px;
+  font-family: 'Courier New', Courier, monospace;
+}
+.navbar a{
+  margin-left: 16px;
+  text-decoration: none;
+  padding: 6px;
+}
+
+.navbar a:hover{
+  color: hsl(231, 76%, 38%);
+  background-color:  rgb(225, 222, 222);
+  border-radius: 10px;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.5) ;
+}
+
+
+.navbar:hover{
+  box-shadow: 16px 10px 18px rgba(0, 0, 0, 0.1); 
+}
+.foot{
+  position: fixed;
+  display:flex ;
+  height: 70px;
+  width: 1400px;
+  margin-left: -20px;
+  background-color: rgb(80, 165, 222);
+  margin-top: 515px;
+  margin-bottom: 40px;
+  
+}
+.logo{
+  width: 20px;
+  width: 20px;
+
+}
+.list li{
+  font-family: 'Courier New', Courier, monospace;
+  align-items: center;
+  list-style: none;
+ margin-bottom: -5px;
+ margin-top:-5px;
+ 
+  
+}
+
+
