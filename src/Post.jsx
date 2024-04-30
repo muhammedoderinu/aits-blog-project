@@ -35,26 +35,31 @@ export default function Post() {
     return (
         <div>
             <form className="custom-form" onSubmit={handleSubmit}>
-                <h2>Title</h2>
-                <input type="text" name="title" placeholder="Enter title" />
-                <h2>Author</h2>
-                <input type="text" name="author" placeholder="Enter author" />
-                <h2>Category</h2>
-                <input type="text" name="category" placeholder="Enter category" />
+                <div className="flex-form">
+                    <div>
+                        <h2>Title</h2>
+                        <input type="text" name="title" placeholder="Enter title" />
+                        <h2>Author</h2>
+                        <input type="text" name="author" placeholder="Enter author" />
+                        <h2>Category</h2>
+                        <input type="text" name="category" placeholder="Enter category" />
+                    </div>
+
+                    <div className="file-input">
+                        <label htmlFor="file-upload" className="file-label">
+                            {imageUrl ? (
+                                <img src={imageUrl} alt="Upload Image" />
+                            ) : (
+                                <img src={img} alt="Upload Image" />
+                            )}
+                        </label>
+                        <input id="file-upload" type="file" onChange={handleImageChange} />
+                    </div>
+                </div>
+
 
                 <h2>Content</h2>
                 <textarea name="content" placeholder="Enter content" />
-                <h2>Upload image</h2>
-                <div className="file-input">
-                    <label htmlFor="file-upload" className="file-label">
-                        {imageUrl ? (
-                            <img src={imageUrl} alt="Upload Image" />
-                        ) : (
-                            <img src={img} alt="Upload Image" />
-                        )}
-                    </label>
-                    <input id="file-upload" type="file" onChange={handleImageChange} />
-                </div>
 
                 <input type="submit" value="Add blog" />
             </form>
