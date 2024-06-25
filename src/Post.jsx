@@ -3,6 +3,7 @@ import img from './imageicon.png'
 
 export default function Post() {
     const [imageUrl, setImageUrl] = useState(null);
+    const [errorMessage, setErrorMessage] = useState('');
 
     const handleImageChange = (e) => {
         const file = e.target.files[0];
@@ -10,7 +11,7 @@ export default function Post() {
 
         reader.onloadend = () => {
             setImageUrl(reader.result);
-        };
+        }; es
 
         if (file) {
             reader.readAsDataURL(file);
@@ -27,8 +28,9 @@ export default function Post() {
         const image = imageUrl;
 
         if (!title || !author || !category || !content || !image) {
-            alert('Please fill in all fields and upload an image.');
+            setErrorMessage('Please fill in all fields and upload an image.');
             return;
+
         }
     };
 
@@ -60,6 +62,7 @@ export default function Post() {
 
                 <h2>Content</h2>
                 <textarea name="content" placeholder="Enter content" />
+                <p style={{ color: 'red' }}>{errorMessage}</p>
 
                 <input type="submit" value="Add blog" />
             </form>
