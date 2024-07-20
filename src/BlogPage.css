@@ -1,0 +1,10 @@
+
+.blog-page {
+  font-family: Arial, sans-serif;
+}
+
+.blog-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}

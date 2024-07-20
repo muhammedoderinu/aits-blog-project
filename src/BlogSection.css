@@ -1,0 +1,14 @@
+
+.blog-section {
+  text-align: center;
+}
+
+.image-item {
+  text-align: center;
+  margin: 10px 0;
+}
+
+.image-item img {
+  width: 100px;
+  height: 100px;
+}

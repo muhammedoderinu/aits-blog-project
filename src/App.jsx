@@ -1,14 +1,20 @@
-import Blog from "./blog-page/blog.jsx";
-// import Apps from "./post-page/Apps.jsx"
+import React from "react";
+import "./App.css";
+import BlogPage from "./BlogPage";
 
-function App() {
-  return(
-    <>
-     <Blog />
-     {/* <Apps></Apps> */}
-    </>
+
+
+
+
+function App () {
+  return (
+    <div className="App">
+    
+    
+    <BlogPage />
+  
    
-
+    </div>
   )
 }
 
