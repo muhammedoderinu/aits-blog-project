@@ -1,0 +1,16 @@
+{
+    "blogs": [
+        {
+            "title": "my first blog",
+            "body": "why do you use it?\n Its long established fact that a reaader will be ",
+            "author": "mario",
+            "id": 1
+        },
+        {
+            "title": "opening party",
+            "body": "why do you use it?\n Its long established fact that a reaader will be ",
+            "author": "yoshi",
+            "id": 2
+        }
+    ]
+}
